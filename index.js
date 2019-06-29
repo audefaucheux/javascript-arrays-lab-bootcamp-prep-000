@@ -23,6 +23,6 @@ function appendKitten(name) {
 }
 
 function prependKitten(name) {
-  var kittens2 = kittens.concat(name,kittens)
-  return kittens2.slice(3)
+  var kittens2 = [name,...kittens]
+  return kittens2
 }
